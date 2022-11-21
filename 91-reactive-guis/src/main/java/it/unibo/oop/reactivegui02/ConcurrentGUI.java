@@ -26,10 +26,10 @@ public final class ConcurrentGUI extends JFrame {
     final JButton stop = new JButton("stop");
 
     private volatile boolean stopCounter;
-    private int counter=0;
+    public int counter=0;
     private volatile boolean restartCounter;
 
-    final Agent agent = new Agent();
+    private Agent agent = new Agent();
 
     public ConcurrentGUI(){
         super();
@@ -105,6 +105,6 @@ public final class ConcurrentGUI extends JFrame {
             stopCounter=true;
             restartCounter = true;
         }
-        
     }
+
 }
