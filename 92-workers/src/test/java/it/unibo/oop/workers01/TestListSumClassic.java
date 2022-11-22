@@ -48,7 +48,7 @@ public class TestListSumClassic {
             assertEquals(sum, sumList.sum(list));
             System.out.println("Tried with " + threads + " thread: "
                     + (System.currentTimeMillis() - time) + MSEC);
-        }
+        } 
     }
 
 }
